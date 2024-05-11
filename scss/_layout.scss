@@ -1,0 +1,55 @@
+@use "sass:map";
+
+$colors: (
+"Green": #008fd1,
+"Blue": #008dce
+);
+
+$break-points: (
+"sm": 576px,
+"md": 768px
+);
+
+%FontSizeLarge {
+  font-size: 24px; // assuming this is the desired font size
+}
+
+.container {
+max-width: 1200px;
+border: solid 2px map-get($colors, "Green");
+margin: auto;
+
+@media (min-width: map-get($break-points, "sm")) {
+    width: 100%;
+}
+
+@media (min-width: map-get($break-points, "md")) {
+    width: 100%;
+}
+}
+
+@mixin flex($justify: space-between, $align: center, $display: block) {
+display: $display;
+justify-content: $justify;
+align-items: $align;
+}
+
+.card {
+@include flex(center, center, flex);
+}
+
+.navigation {
+@include flex(center);
+}
+
+.column-footer {
+@include flex(space-between, center, inline-flex);
+}
+
+.special-text {
+@extend %FontSizeLarge;
+}
+
+.other-text {
+@extend %FontSizeLarge;
+}

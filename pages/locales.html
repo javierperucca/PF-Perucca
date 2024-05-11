@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/styles.css" type="text/css">
+    <title>RedFit</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">RedFit</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Locales</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="jumbotron">
+            <div class="container">
+                <h1>¡Veni a Conocernos!</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container mt-3 locales">
+            <h2>Nuestros locales disponibles</h2>
+            <button id="locales-toggle" class="btn btn-primary btn-lg" type="button" data-bs-toggle="collapse" data-bs-target="#locales-collapse" aria-expanded="false" aria-controls="locales-collapse">
+                Ver locales
+            </button>
+            <div class="collapse" id="locales-collapse">
+                <table class="table locales-table">
+                    <thead>
+                        <tr>
+                            <th>Dirección</th>
+                            <th>Barrio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Av. Álvarez Jonte 4113</td>
+                            <td>Monte Castro</td>
+                        </tr>
+                        <tr>
+                            <td>Av. Francisco Beiró 3944</td>
+                            <td>Villa Devoto</td>
+                        </tr>
+                        <tr>
+                            <td>Av.Echeverría 2780</td>
+                            <td>Belgrano</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <section class="text-center">
+            <h2>Ubicación de Nuestra Sede Principal</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.543073518956!2d-58.52952972497302!3d-34.61571405813062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7eeb41e7f3d%3A0x65457d8cd90f75bd!2sRedFit%20Devoto!5e0!3m2!1ses-419!2sar!4v1712449684227!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark text-white">
+        <div class="container">
+            <p class="text-center">Copyright © 2024 RedFit. Todos los derechos reservados</p>
+            <div class="redes text-center">
+                <a href="https://www.facebook.com/proteina.whey"><i class="fab fa-facebook fa-flip"></i></a>
+                <a href="https://www.instagram.com/wheyproteinofficial/"><i class="fab fa-instagram fa-flip"></i></a>
+                <a href="https://www.tiktok.com/@mywheyprotein?lang=es"><i class="fab fa-tiktok fa-flip"></i></a>
+                <a href="https://www.youtube.com/@NutriMusculo"><i class="fab fa-youtube fa-flip"></i></a>
+                <a href="https://twitter.com/WheyProteinInst"><i class="fa-brands fa-x-twitter fa-flip"></i></a>
+            </div>
+        </div>
+    </footer>
+    <a href="#" class="subir"><i class="fas fa-arrow-up"></i></a>
+    <a class="subir" href="#">
+    <i class="fa-solid fa-sort-up"></i></a>
+<a href="https://walink.co/8a1857">Contáctame en WhatsApp</a><a class="what" target="_blank">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
